@@ -19,8 +19,9 @@ body {
 header{
     display: flex;
     justify-content: space-between;
+
     /*height: 12vmin;*/
-    height: 12vh;
+    height: 8vh;
     width: 100%;
     font-family: 'Iceland', sans-serif;
 
@@ -37,7 +38,7 @@ header .name {
     align-items: center;
 
     margin-inline: 3vw;
-    font-size: 7vmin;
+    font-size: 6vw;
     
 
 }
@@ -51,9 +52,9 @@ header .nav {
     align-items: center;
     justify-content: space-between;
 
-    width: 40vmin;
-    margin-inline: 5vw;
-    font-size: 4vmin;
+    width: 40vw;
+    margin-inline: 3vw;
+    font-size: 4vw;
 }
 
 header .nav li {
@@ -84,7 +85,7 @@ section {
     align-items: center;
     justify-content: space-around;
 
-    height: 98vh;
+    height: 50vh;
 }
 
 section .text {
@@ -92,8 +93,7 @@ section .text {
 }
 
 section h1 {
-
-    font-size: 10vmin;
+    font-size: 4.5vw;
 }
 
 section .icons {
@@ -101,23 +101,28 @@ section .icons {
     flex-direction: column;
     justify-content: space-between;
     
-    height: 70vmin;  
+    height: 30vw;  
 }
 
 section .icons img {
-    height: 17vmin;
+    height: 8vw;
 }
 
+
+
 /* Sobre */
+
+.section-perfil{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
 
 .sobre {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-
-
-    font-size: 3vmin;
+    font-size: 3.5vw;
     font-family: 'kanit', sans-serif;
 }
 
@@ -125,6 +130,7 @@ section .icons img {
     display: flex;
     justify-content: center;
     align-items: center;
+
     background: linear-gradient(90deg, rgba(241, 9, 253, 0.58) 13.36%, rgba(14, 207, 224, 0.58) 62.41%);
     height: 25.5vmax;
     width: 25.5vmax;
@@ -140,6 +146,10 @@ section .icons img {
     display: flex;
     align-items: center;
 
+}
+
+#social-icons {
+    height: 20vh;
 }
 
 #social-icons img {
@@ -176,7 +186,7 @@ footer {
 .line{
     background: linear-gradient(90deg, rgba(241, 9, 253, 0.58) 13.36%, rgba(14, 207, 224, 0.58) 62.41%);
     height: 0.5vmin;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 /* animation */
@@ -203,3 +213,49 @@ footer {
         transform: translateY(0);
     }
 }
+
+@media screen and (min-width: 1000px) {
+    header {
+        height: 12vh;
+    }
+    header .nav{
+        width: 20vw;
+        font-size: 2vw;
+    }
+
+    header .name {
+        display: flex;
+        align-items: center;
+    
+        margin-inline: 3vw;
+        font-size: 3vw;
+    }
+
+    section {
+        height: 98vh;
+    }
+
+    .sobre {
+      font-size: 2vw;
+    }
+
+    #social-icons {
+        height: 70vh;
+    }
+
+    .line {
+        margin-bottom: 10vh;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    #social-icons {
+        height: 25vh;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    #social-icons {
+        height: 60vh;
+    }
+  }
