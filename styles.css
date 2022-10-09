@@ -21,7 +21,7 @@ header{
     justify-content: space-between;
 
     /*height: 12vmin;*/
-    height: 8vh;
+    height: 8vmin;
     width: 100%;
     font-family: 'Iceland', sans-serif;
 
@@ -38,7 +38,7 @@ header .name {
     align-items: center;
 
     margin-inline: 3vw;
-    font-size: 6vw;
+    font-size: 6vmin;
     
 
 }
@@ -53,8 +53,9 @@ header .nav {
     justify-content: space-between;
 
     width: 40vw;
+    max-width: 40vw;
     margin-inline: 3vw;
-    font-size: 4vw;
+    font-size: 4vmin;
 }
 
 header .nav li {
@@ -85,7 +86,7 @@ section {
     align-items: center;
     justify-content: space-around;
 
-    height: 50vh;
+    height: 70vh;
 }
 
 section .text {
@@ -101,7 +102,7 @@ section .icons {
     flex-direction: column;
     justify-content: space-between;
     
-    height: 30vw;  
+    height: 60vh;  
 }
 
 section .icons img {
@@ -122,7 +123,7 @@ section .icons img {
     flex-direction: column;
     align-items: center;
 
-    font-size: 3.5vw;
+    font-size: 3.5vmin;
     font-family: 'kanit', sans-serif;
 }
 
@@ -139,6 +140,7 @@ section .icons img {
 
 .perfil img{
     border-radius: 50%;
+    max-height: 25vmax;
     height: 25vmax;
 }
 
@@ -149,10 +151,14 @@ section .icons img {
 }
 
 #social-icons {
-    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
 }
 
 #social-icons img {
+    height: 8vw;
     transition: .7s;
 }
 
@@ -217,9 +223,11 @@ footer {
 @media screen and (min-width: 1000px) {
     header {
         height: 12vh;
+        max-height: 12vh;
     }
     header .nav{
         width: 20vw;
+        max-width: 20vw;
         font-size: 2vw;
     }
 
@@ -233,6 +241,7 @@ footer {
 
     section {
         height: 98vh;
+        max-height: 98vh;
     }
 
     .sobre {
@@ -241,6 +250,7 @@ footer {
 
     #social-icons {
         height: 70vh;
+        max-height: 70vh;
     }
 
     .line {
@@ -251,11 +261,13 @@ footer {
   @media screen and (min-width: 800px) {
     #social-icons {
         height: 25vh;
+        max-height: 25vh;
     }
   }
 
   @media screen and (min-width: 500px) {
     #social-icons {
         height: 60vh;
+        max-height: 60vh;
     }
   }
