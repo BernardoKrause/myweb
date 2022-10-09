@@ -271,3 +271,14 @@ footer {
         max-height: 60vh;
     }
   }
+
+  @media screen and (min-width: 300px) {
+    #social-icons {
+        height: 20vh;
+        max-height: 60vh;
+    }
+
+    section .icons {
+        height: 25vh;
+    }
+  }
