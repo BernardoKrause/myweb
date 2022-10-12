@@ -85,7 +85,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     height: 70vh;
 }
 
@@ -101,8 +100,7 @@ section .icons {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    height: 60vh;  
+    height: 60vh;
 }
 
 section .icons img {
@@ -220,7 +218,35 @@ footer {
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 250px) {
+    #social-icons {
+        height: 20vh;
+        max-height: 60vh;
+    }
+
+    section {
+        height: 50vh;
+    }
+
+    section .icons {
+        height: 25vh;
+    }
+  }
+
+@media screen and (min-width: 500px) {
+    #social-icons {
+        height: 35vh;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #social-icons {
+        height: 25vh;
+        max-height: 25vh;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
     header {
         height: 12vh;
         max-height: 12vh;
@@ -249,8 +275,12 @@ footer {
     }
 
     #social-icons {
+        height: 90vh;
+        max-height: 60vh;
+    }
+
+    section .icons {
         height: 70vh;
-        max-height: 70vh;
     }
 
     .line {
@@ -258,27 +288,8 @@ footer {
     }
   }
 
-  @media screen and (min-width: 800px) {
-    #social-icons {
-        height: 25vh;
-        max-height: 25vh;
-    }
-  }
 
-  @media screen and (min-width: 500px) {
-    #social-icons {
-        height: 60vh;
-        max-height: 60vh;
-    }
-  }
 
-  @media screen and (min-width: 300px) {
-    #social-icons {
-        height: 20vh;
-        max-height: 60vh;
-    }
+  
 
-    section .icons {
-        height: 25vh;
-    }
-  }
+  
