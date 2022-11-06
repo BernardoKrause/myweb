@@ -1,12 +1,12 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: .2fr 4fr .5fr 0.1fr;
+    grid-template-columns: repeat(autofit, 1fr);
+    grid-template-rows: repeat(autofit, 1fr);
     grid-template-areas: 
-    "h h h h"
-    "m m m m"
-    "f f f f"
-    "c c c c";
+    "h"
+    "m"
+    "f"
+    "c";
 }
 
 header {
@@ -28,28 +28,12 @@ main {
 }
 
 .projects {
-    /*display: grid;
-    grid-template-columns: repeat(autofit, minmax(1fr));
-    grid-template-rows: 1fr 2fr 2fr 2fr;
-    grid-template-areas: 
-    "a a a"
-    "p p p";*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.p1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.projects-text {
-    grid-area: a;
-}
-
 .projects-images {
-    grid-area: p;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,19 +75,8 @@ footer .content div:nth-child(2), footer .content div:nth-child(3) {
     justify-content: center;
 }
 
-@media only screen and (max-width: 854px){
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 4fr 1fr;
-        grid-template-areas: 
-        "h"
-        "m"
-        "f"
-        "c";
-    }
-
-    /*.about-me {
+@media only screen and (max-width: 912px){
+    .about-me {
         display: flex;
         flex-direction: column-reverse;
     }
@@ -111,7 +84,7 @@ footer .content div:nth-child(2), footer .content div:nth-child(3) {
     .projects {
         display: flex;
         flex-direction: column;
-    }*/
+    }
 
     .projects-images {
         display: flex;
