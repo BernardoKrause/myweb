@@ -21,7 +21,7 @@ hr {
 
 body {
     height: 100%;
-    background: no-repeat url(/page/assets/blurry-gradient-haikei.png);
+    background: no-repeat url(/assets/blurry-gradient-haikei.png);
     background-size: cover;
     text-align: center;
     color: rgb(223, 223, 223);
