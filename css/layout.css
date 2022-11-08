@@ -11,7 +11,12 @@ body {
 
 header {
     grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
 }
+
 
 main {
     grid-area: m;
@@ -76,6 +81,12 @@ footer .content div:nth-child(2), footer .content div:nth-child(3) {
 }
 
 @media only screen and (max-width: 912px){
+    body {
+        zoom: 0.4;
+    }
+    header {
+        display: none;
+    }
     .about-me {
         display: flex;
         flex-direction: column-reverse;
