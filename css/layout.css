@@ -16,6 +16,10 @@ header {
     justify-content: flex-end;
 }
 
+.projetos {
+    grid-area: "m";
+}
+
 
 main {
     grid-area: "m";
@@ -61,6 +65,10 @@ footer {
     align-items: center;
 }
 
+.back {
+    grid-area: "f";
+}
+
 footer .content {
     display: flex;
     align-items: center;
@@ -81,7 +89,7 @@ footer .content div:nth-child(2), footer .content div:nth-child(3) {
 
 @media only screen and (max-width: 912px){
     body {
-        zoom: 0.2;
+        zoom: 0.4;
     }
     .about-me {
         display: flex;

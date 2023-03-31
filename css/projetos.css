@@ -39,3 +39,10 @@ div p {
     flex-direction: column;
     align-items: flex-end;
 }
+
+@media only screen and (max-width: 912px){ 
+    .project {
+        text-align: center;
+        justify-content: center;
+    }
+}
