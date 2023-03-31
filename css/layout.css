@@ -10,16 +10,15 @@ body {
 }
 
 header {
-    grid-area: h;
+    grid-area: "h";
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 
 main {
-    grid-area: m;
+    grid-area: "m";
 }
 
 .about-me {
@@ -57,7 +56,7 @@ main {
 }
 
 footer {
-    grid-area: f;
+    grid-area: "f";
     display: flex;
     align-items: center;
 }
@@ -75,7 +74,7 @@ footer .content div:nth-child(2), footer .content div:nth-child(3) {
 }
 
 .copyright {
-    grid-area: c;
+    grid-area: "c";
     display: flex;
     justify-content: center;
 }
