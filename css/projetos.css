@@ -9,6 +9,11 @@
     flex-wrap: wrap-reverse;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
 #gitButton {
     background: none;
     border: none;
