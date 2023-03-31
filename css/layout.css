@@ -81,10 +81,7 @@ footer .content div:nth-child(2), footer .content div:nth-child(3) {
 
 @media only screen and (max-width: 912px){
     body {
-        zoom: 0.4;
-    }
-    header {
-        display: none;
+        zoom: 0.2;
     }
     .about-me {
         display: flex;
